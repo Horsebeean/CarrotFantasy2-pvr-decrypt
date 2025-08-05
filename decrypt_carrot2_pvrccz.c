@@ -65,7 +65,7 @@ int main(int argc, char* argv[])
 
     // read encrypted .pvr.ccz
     FILE* ccz_file =  fopen(inputFilePath, "rb");
-    if(!decryption_key_file)
+    if(!inputFilePath)
     {
         perror("failed to open the input .pvr.ccz file");
         exit(1);
